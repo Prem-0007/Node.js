@@ -1,0 +1,24 @@
+import os from 'os';
+
+console.log('Operating System Information:');
+console.log('Platform:', os.platform());
+console.log('Architecture:', os.arch());
+console.log('CPU Information:', os.cpus());
+console.log('Total Memory:', os.totalmem());
+console.log('Free Memory:', os.freemem());
+console.log('Home Directory:', os.homedir());
+console.log('Uptime (seconds):', os.uptime());
+console.log('Network Interfaces:', os.networkInterfaces());
+console.log('Endianness:', os.endianness());
+console.log('Temporary Directory:', os.tmpdir());
+console.log('User Information:', os.userInfo());
+console.log('Hostname:', os.hostname());
+console.log('Release:', os.release());
+console.log('Type:', os.type());
+console.log('Version:', os.version());
+console.log('EOL:', JSON.stringify(os.EOL));
+console.log('Constants:', os.constants);
+console.log('CPU Usage:', os.cpus().map(cpu => cpu.times));
+console.log('Load Average:', os.loadavg());
+console.log('totalmem (GB):', (os.totalmem() / (1024 ** 3)).toFixed(2));
+console.log('freemem (GB):', (os.freemem() / (1024 ** 3)).toFixed(2));
