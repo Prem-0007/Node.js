@@ -1,0 +1,1 @@
+Hello, akka! This is a file created using file system module in Node.js.
